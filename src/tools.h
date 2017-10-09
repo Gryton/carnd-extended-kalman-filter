@@ -29,6 +29,7 @@ public:
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
 
+  VectorXd ConvertPolarCoordinates(const VectorXd& coordinates);
 };
 
 #endif /* TOOLS_H_ */

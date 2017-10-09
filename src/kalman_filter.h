@@ -1,6 +1,8 @@
 #ifndef KALMAN_FILTER_H_
 #define KALMAN_FILTER_H_
 #include "Eigen/Dense"
+#include <cmath>
+#include <iostream>
 
 class KalmanFilter {
 public:
@@ -22,7 +24,8 @@ public:
 
   // measurement covariance matrix
   Eigen::MatrixXd R_;
-
+  Eigen::MatrixXd R_radar;
+  Eigen::MatrixXd R_lidar;
   /**
    * Constructor
    */
